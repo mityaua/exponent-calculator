@@ -1,3 +1,4 @@
+// Footer container
 .footer {
   display: flex;
   justify-content: center;
@@ -6,23 +7,48 @@
   border-top: 1px solid #d3d4d4;
 }
 
+// Footer text
 .copy {
   margin-right: 5px;
 
   font-size: 0.8rem;
 }
 
+// Footer emoji link
 .link {
   text-decoration: none;
 
   opacity: 1;
-
   transition: opacity 250ms linear;
+
+  animation: croak 3000ms infinite linear;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+
+    transition: opacity 250ms linear;
+  }
 }
 
-.link:hover,
-.link:focus {
-  opacity: 0.8;
-
-  transition: opacity 250ms linear;
+// Animation for emoji
+@keyframes croak {
+  0% {
+    transform: scale(0.75);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.75);
+  }
 }
