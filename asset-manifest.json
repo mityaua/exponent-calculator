@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/exponent-calculator/static/css/main.3a7c1d6c.chunk.css",
+    "main.js": "/exponent-calculator/static/js/main.521ca5e6.chunk.js",
+    "main.js.map": "/exponent-calculator/static/js/main.521ca5e6.chunk.js.map",
+    "runtime-main.js": "/exponent-calculator/static/js/runtime-main.bd40ed7c.js",
+    "runtime-main.js.map": "/exponent-calculator/static/js/runtime-main.bd40ed7c.js.map",
+    "static/js/2.e4d042d8.chunk.js": "/exponent-calculator/static/js/2.e4d042d8.chunk.js",
+    "static/js/2.e4d042d8.chunk.js.map": "/exponent-calculator/static/js/2.e4d042d8.chunk.js.map",
+    "index.html": "/exponent-calculator/index.html",
+    "static/css/main.3a7c1d6c.chunk.css.map": "/exponent-calculator/static/css/main.3a7c1d6c.chunk.css.map",
+    "static/js/2.e4d042d8.chunk.js.LICENSE.txt": "/exponent-calculator/static/js/2.e4d042d8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bd40ed7c.js",
+    "static/js/2.e4d042d8.chunk.js",
+    "static/css/main.3a7c1d6c.chunk.css",
+    "static/js/main.521ca5e6.chunk.js"
+  ]
+}
