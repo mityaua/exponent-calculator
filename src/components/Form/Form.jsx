@@ -1,9 +1,7 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 
-import TextField from '@material-ui/core/TextField';
-import ButtonGroup from '@material-ui/core/ButtonGroup';
-import Button from '@material-ui/core/Button';
+import { TextField, ButtonGroup, Button } from '@material-ui/core';
 
 import s from './Form.module.scss';
 

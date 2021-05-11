@@ -3,7 +3,7 @@ import s from './Description.module.scss';
 export default function Description() {
   return (
     <div className={s.container}>
-      <h3>What is an exponent?</h3>
+      <h2>What is an exponent?</h2>
 
       <p>
         Exponentiation is a mathematical operation, written as{' '}
