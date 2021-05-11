@@ -32,7 +32,7 @@ export default function Form({ onSubmit }) {
     const result = Math.pow(number, exponent);
 
     const normalizedResult = new Intl.NumberFormat('en-En', {
-      maximumSignificantDigits: 3,
+      maximumSignificantDigits: 20,
     }).format(result);
 
     onSubmit(normalizedResult);
