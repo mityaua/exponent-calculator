@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from 'react';
 
-function App() {
+import Header from './components/Header';
+import Form from './components/Form';
+import Total from './components/Total';
+import Description from './components/Description';
+import Footer from './components/Footer';
+
+export default function App() {
+  const [total, setTotal] = useState(null);
+
+  const getResult = result => setTotal(result);
+
+  useEffect(() => {
+    document.title = total
+      ? `Result: ${total} | Exponent calculator`
+      : 'Exponent calculator | React App';
+  }, [total]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+
+      <main className="App">
+        <Form onSubmit={getResult} />
+
+        <Total total={total} />
+
+        <Description />
+      </main>
+
+      <Footer />
+    </>
   );
 }
-
-export default App;

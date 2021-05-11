@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-top: 1px solid #d3d4d4;
+}
+
+.copy {
+  margin-right: 5px;
+
+  font-size: 0.8rem;
+}
+
+.link {
+  text-decoration: none;
+
+  opacity: 1;
+
+  transition: opacity 250ms linear;
+}
+
+.link:hover,
+.link:focus {
+  opacity: 0.8;
+
+  transition: opacity 250ms linear;
+}
