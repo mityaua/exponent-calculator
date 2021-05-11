@@ -53,6 +53,9 @@ export default function Form({ onSubmit }) {
           name="number"
           value={number}
           onChange={handleChange}
+          id="number"
+          color="primary"
+          autoFocus
           required
         />
 
@@ -65,6 +68,8 @@ export default function Form({ onSubmit }) {
           name="exponent"
           value={exponent}
           onChange={handleChange}
+          id="exponent"
+          color="secondary"
           required
         />
 
