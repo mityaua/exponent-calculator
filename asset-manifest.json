@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/exponent-calculator/static/css/main.9f233886.chunk.css",
-    "main.js": "/exponent-calculator/static/js/main.ffb89c4b.chunk.js",
-    "main.js.map": "/exponent-calculator/static/js/main.ffb89c4b.chunk.js.map",
+    "main.js": "/exponent-calculator/static/js/main.c026db06.chunk.js",
+    "main.js.map": "/exponent-calculator/static/js/main.c026db06.chunk.js.map",
     "runtime-main.js": "/exponent-calculator/static/js/runtime-main.bd40ed7c.js",
     "runtime-main.js.map": "/exponent-calculator/static/js/runtime-main.bd40ed7c.js.map",
     "static/js/2.d5176e17.chunk.js": "/exponent-calculator/static/js/2.d5176e17.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.bd40ed7c.js",
     "static/js/2.d5176e17.chunk.js",
     "static/css/main.9f233886.chunk.css",
-    "static/js/main.ffb89c4b.chunk.js"
+    "static/js/main.c026db06.chunk.js"
   ]
 }
