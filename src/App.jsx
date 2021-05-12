@@ -4,7 +4,6 @@ import Header from './components/Header';
 import Form from './components/Form';
 import Total from './components/Total';
 import Description from './components/Description';
-import Social from './components/Social';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -28,8 +27,6 @@ export default function App() {
         <Total total={total} />
 
         <Description />
-
-        <Social />
       </main>
 
       <Footer />
