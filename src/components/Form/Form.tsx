@@ -5,18 +5,27 @@ import { TextField, ButtonGroup, Button } from '@material-ui/core';
 
 import s from './Form.module.scss';
 
-const initialState = {
-  number: '',
+interface IProps {
+  onSubmit: (result: string, param?: string) => void;
+}
+
+interface IState {
+  num: string;
+  exponent: string;
+}
+
+const initialState: IState = {
+  num: '',
   exponent: '',
 };
 
 // Form component
-export default function Form({ onSubmit }) {
-  const [state, setState] = useState(initialState);
-  const { number, exponent } = state;
+export default function Form({ onSubmit }: IProps) {
+  const [state, setState] = useState<IState>(initialState);
+  const { num, exponent } = state;
 
   // Inputs handler
-  const handleChange = e => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
 
     setState(prev => ({
@@ -26,10 +35,10 @@ export default function Form({ onSubmit }) {
   };
 
   // Form submit func
-  const handleSubmit = e => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const result = Math.pow(number, exponent);
+    const result = Math.pow(Number(num), Number(exponent));
 
     const normalizedResult = new Intl.NumberFormat('en-En', {
       maximumSignificantDigits: 20,
@@ -50,8 +59,8 @@ export default function Form({ onSubmit }) {
         <TextField
           label="Number"
           type="number"
-          name="number"
-          value={number}
+          name="num"
+          value={num}
           onChange={handleChange}
           id="number"
           color="primary"
@@ -83,12 +92,12 @@ export default function Form({ onSubmit }) {
             type="submit"
             title="Calculate result"
             aria-label="Calculate result"
-            disabled={!number || !exponent}
+            disabled={!num || !exponent}
           >
             Calculate
           </Button>
 
-          {(number !== '' || exponent !== '') && (
+          {(num !== '' || exponent !== '') && (
             <Button
               onClick={resetForm}
               title="Reset result"

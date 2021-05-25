@@ -7,9 +7,9 @@ import Description from './components/Description';
 import Footer from './components/Footer';
 
 export default function App() {
-  const [total, setTotal] = useState(null);
+  const [total, setTotal] = useState('');
 
-  const getResult = result => setTotal(result);
+  const getResult = (result: string) => setTotal(result);
 
   useEffect(() => {
     document.title = total
