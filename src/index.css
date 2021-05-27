@@ -1,6 +1,6 @@
 body {
   color: #4e4e4e;
-  background-color: rgb(217 220 239 / 50%);
+  background-color: rgba(217, 220, 239, 0.5);
 
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
     helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
